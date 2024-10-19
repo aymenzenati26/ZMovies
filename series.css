@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+.season {
+    background-color: #fff;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 8px;
+    width: 90%;
+    max-width: 800px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #444;
+    margin-bottom: 15px;
+    cursor: pointer;  /* Change cursor to pointer */
+}
+
+.episode-list {
+    list-style-type: none;
+    display: none; /* Initially hide episodes */
+}
+
+.episode-list li {
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.episode-list li:last-child {
+    border-bottom: none;
+}
+
+.episode-list li a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+.episode-list li a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #333;
+    color: #fff;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    body {
+        font-size: 16px;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    .season {
+        width: 95%;
+        padding: 15px;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    .episode-list li {
+        padding: 8px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        font-size: 14px;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    .season {
+        width: 100%;
+        padding: 10px;
+    }
+
+    h2 {
+        font-size: 1.2rem;
+    }
+
+    .episode-list li {
+        padding: 5px 0;
+    }
+
+    footer {
+        padding: 15px 0;
+        font-size: 0.9rem;
+    }
+}
